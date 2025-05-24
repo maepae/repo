@@ -12,12 +12,7 @@
     </style>
 </head>
 <body>
-    <a-scene embedded arjs="
-    sourceType: webcam; 
-    markersAreaEnabled: true;  <!-- Aktifkan area marker -->
-    debugUIEnabled: true;" 
-    onloaded="console.log('Scene loaded!')"
-  ">
+    <a-scene embedded arjs="sourceType: webcam; markersAreaEnabled: true;">
         <!-- Marker HIRO -->
         <a-marker preset="hiro">
             <!-- Model Custom (Pastikan URL benar!) -->
