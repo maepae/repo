@@ -12,16 +12,14 @@
     </style>
 </head>
 <body>
-    <!-- Adegan AR -->
-    <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: true;">
-        <!-- Gunakan marker HIRO (default) -->
+    <a-scene embedded arjs="sourceType: webcam; markersAreaEnabled: true;">
+        <!-- Marker HIRO -->
         <a-marker preset="hiro">
-            <!-- Model 3D Rubah (Fox) dari A-Frame contoh -->
+            <!-- Model Custom (Pastikan URL benar!) -->
             <a-entity
-                gltf-model="https://cdn.aframe.io/test-models/models/glTF-2.0/virtualcity/VC.gltf"
-                scale="0.5 0.5 0.5"
+                gltf-model="https://raw.githack.com/username/repo/main/model.glb"
+                scale="0.1 0.1 0.1"
                 position="0 0 0"
-                rotation="0 180 0"
             ></a-entity>
         </a-marker>
         <a-entity camera></a-entity>
